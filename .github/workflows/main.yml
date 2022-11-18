@@ -1,0 +1,18 @@
+name: CI_workflow_test
+
+on:
+  push:
+    branches: [skip]
+  pull_request:
+    branches: [skip]
+  
+jobs:
+  deploy:
+    
+    runs-on: [ubuntu-latest]
+
+    strategy:
+      matrix:
+        node-version: [14.x]
+
+    steps:
