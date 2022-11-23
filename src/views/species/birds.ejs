@@ -1,0 +1,910 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/logos/jer-micro-logo-32.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/assets/logos/jer-micro-logo-192.png">
+    <link rel="stylesheet" type="text/css" href="/assets/css/jer-core.css">
+    <title>Birds</title>
+  </head>
+  <body>
+    <header id="page-header">
+      <%- include('components/header', {}); %>  
+    </header>
+    <section class="simple-section tinted">
+      <div class="content-section centered">
+        <h2>Bird Species of the Jornada</h2>
+        <p>Species listed reflect both breeding populations and transient visitors. They are grouped alphabetically by scientific name.</p>
+        <div class="species-table-container">
+          <table class="species-table">
+            <tbody>
+              <tr>
+                <th>Common Name</th>
+                <th>Code</strong></th>
+                <th>Scientific Name</th>
+                <th>Notes</th>
+              </tr>
+              <tr>
+                <td>American Crow</td>
+                <td>AMCR</td>
+                <td><i>Corvus brachyrhynchos</i></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>American Goldfinch</td>
+                <td>AMGO</td>
+                <td><i>Carduelis tristis</i></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>American Kestrel</td>
+                <td>AMKE</td>
+                <td><i>Falco sparverius</i></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>American Pipit</td>
+                <td>WAPI</td>
+                <td><i>Anthus rubescens</i></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>American Wigeon</td>
+                <td>AMWI</td>
+                <td><i>Anas americana</i></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Ash-Throated Flycatcher</td>
+                <td>ATFL</td>
+                <td><i>Myiarchus cinerascens</i></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Audubon's Warbler</td>
+                <td>AUWA</td>
+                <td><i>Dendroica coronata</i></td>
+                <td>*4</td>
+              </tr>
+              <tr>
+                <td>Barn Owl</td>
+                <td>BAOW</td>
+                <td><i>Tyto alba</i></td>
+                <td>*5</td>
+              </tr>
+              <tr>
+                <td>Barn Swallow</td>
+                <td>BARS</td>
+                <td><i>Hirundo rustica</i></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Bewick's Wren</td>
+                <td>BEWR</td>
+                <td><i>Thryomanes bewickii</i></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Black Phoebe</td>
+                <td>BLPH</td>
+                <td><i>Sayornis nigricans</i></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Black-Chinned Hummingbird</td>
+                <td>BCHU</td>
+                <td><i>Archilochus alexandri</i></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Black-Chinned Sparrow</td>
+                <td>BCSP</td>
+                <td><i>Spizella atrogularis</i></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Black-Headed Grosbeak</td>
+                <td>BHGR</td>
+                <td><i>Pheucticus melanocephalus</i></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Black-Tailed Gnatcatcher</td>
+                <td>BTGN</td>
+                <td><i>Polioptila melanura</i></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Black-Throated Sparrow</td>
+                <td>BTSP</td>
+                <td><i>Amphispiza bilineata</i></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Blue Grosbeak</td>
+                <td>BLGR</td>
+                <td><i>Guiraca caerulea</i></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Blue-Gray Gnatcatcher</td>
+                <td>BGGN</td>
+                <td><i>Polioptila caerulea</i></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Blue-Winged Teal</td>
+                <td>BWTE</td>
+                <td><i>Anas discors</i></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Brewer's Blackbird</td>
+                <td>BRBL</td>
+                <td><i>Euphagus cyanocephalus</i></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Brewer's Sparrow</td>
+                <td>BRSP</td>
+                <td><i>Spizella breweri</i></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Broad-Tailed Hummingbird</td>
+                <td>BTLH</td>
+                <td><i>Selaphorus platycercus</i></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Bronzed Cowbird</td>
+                <td>BRCO</td>
+                <td><i>Molothrus aeneus</i></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Brown-Headed Cowbird</td>
+                <td>BHCO</td>
+                <td><i>Molothrus ater</i></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Bullock's Oriole (race of Northern O.)</td>
+                <td>BUOR</td>
+                <td><i>Icterus bullocki (I. galbula)</i></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Burrowing Owl</td>
+                <td>BUOW</td>
+                <td><i>Athene cunicularia</i></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Cactus Wren</td>
+                <td>CACW</td>
+                <td><i>Campylorhynchus brunneicapillus</i></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Canyon Towhee</td>
+                <td>CATO</td>
+                <td><i>Pipilo fuscus</i></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Canyon Wren</td>
+                <td>CANW</td>
+                <td><i>Catherpes mexicanus</i></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Cassin's Kingbird</td>
+                <td>CAKI</td>
+                <td><i>Tyrannus vociferans</i></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Cassin's Sparrow</td>
+                <td>CASP</td>
+                <td><i>Aimophila cassinii</i></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Chestnut-Collared Longspur</td>
+                <td>CCLO</td>
+                <td><i>Calcarius ornatus</i></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Chihuahuan Raven</td>
+                <td>CHRA</td>
+                <td><i>Corvus cryptoleucus</i></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Chipping Sparrow</td>
+                <td>CHSP</td>
+                <td><i>Spizella passerina</i></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Clay-Colored Sparrow</td>
+                <td>CCSP</td>
+                <td><i>Spizella pallida</i></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Cliff Swallow</td>
+                <td>CLSW</td>
+                <td><i>Hirundo pyrrhonota</i></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Common Nighthawk</td>
+                <td>CONI</td>
+                <td><i>Chordeiles minor</i></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Common Poorwill</td>
+                <td>COPO</td>
+                <td><i>Phalaenoptilus nuttallii</i></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Common Raven</td>
+                <td>CORA</td>
+                <td><i>Corvus corax</i></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Cooper's Hawk</td>
+                <td>COHA</td>
+                <td><i>Accipiter cooperii</i></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Cordilleran Flycatcher</td>
+                <td>COFL</td>
+                <td><i>ipidonax occidentalis</i></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Crissal Thrasher</td>
+                <td>CRTH</td>
+                <td><i>Toxostoma crissale</i></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Curve-Billed Thrasher</td>
+                <td>CBTH</td>
+                <td><i>Toxostoma curvirostre</i></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Dark-Eyed Junco</td>
+                <td>DEJU</td>
+                <td><i>Junco hyialis</i></td>
+                <td>*2</td>
+              </tr>
+              <tr>
+                <td>Dickcissel</td>
+                <td>DICK</td>
+                <td><i>Spiza americana</i></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Dusky Flycatcher</td>
+                <td>DUFL</td>
+                <td><i>ipidonax oberholseri</i></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Eastern Meadowlark</td>
+                <td>EAME</td>
+                <td><i>Sturnella magna (race: lilianae)</i></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>European Starling</td>
+                <td>EUST</td>
+                <td><i>Sturnus vulgaris</i></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Ferruginous Hawk</td>
+                <td>FEHA</td>
+                <td><i>Buteo regalis</i></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Gambel's Quail</td>
+                <td>GAQU</td>
+                <td><i>Callipepla gambelii</i></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Golden Eagle</td>
+                <td>GOEA</td>
+                <td><i>Aquila chrysaetos</i></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Gray Flycatcher</td>
+                <td>GRFL</td>
+                <td><i>ipidonax wrightii</i></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Gray-Headed Junco</td>
+                <td>GHJU</td>
+                <td><i>Junco hyialis</i></td>
+                <td>*2</td>
+              </tr>
+              <tr>
+                <td>Great Horned Owl</td>
+                <td>GHOW</td>
+                <td><i>Bubo virginianus</i></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Greater Roadrunner</td>
+                <td>GRRO</td>
+                <td><i>Geococcyx californianus</i></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Snow Goose</td>
+                <td>GSGO</td>
+                <td><i>Chen caerulescens</i></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Great-Tailed Grackle</td>
+                <td>GTGR</td>
+                <td><i>Quiscalus mexicanus</i></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Green-Tailed Towhee</td>
+                <td>GTTO</td>
+                <td><i>Pipilo chlorurus</i></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Green-Winged Teal</td>
+                <td>AGWT</td>
+                <td><i>Anas crecca</i></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Hammond's Flycatcher</td>
+                <td>HAFL</td>
+                <td><i>ipidonax hammondii</i></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Hermit Thrush</td>
+                <td>HETH</td>
+                <td><i>Catharus guttatus</i></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Hermit Warbler</td>
+                <td>HEWA</td>
+                <td><i>Dendroica occidentalis</i></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Horned Lark</td>
+                <td>HOLA</td>
+                <td><i>Eriophila alpestris</i></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>House Finch</td>
+                <td>HOFI</td>
+                <td><i>Carpodacus mexicanus</i></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>House Sparrow</td>
+                <td>HOSP</td>
+                <td><i>Passer domesticus</i></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>House Wren</td>
+                <td>HOWR</td>
+                <td><i>Troglodytes aedon</i></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Killdeer</td>
+                <td>KILL</td>
+                <td><i>Charadrius vociferus</i></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Ladder-Backed Woodpecker</td>
+                <td>LBWO</td>
+                <td><i>Picoides scalaris</i></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Lark Bunting</td>
+                <td>LARB</td>
+                <td><i>Calamospiza melanocorys</i></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Lark Sparrow</td>
+                <td>LASP</td>
+                <td><i>Chondestes grammacus</i></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Least Sandpiper</td>
+                <td>LESA</td>
+                <td><i>Calidris minutilla</i></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Lesser Nighthawk</td>
+                <td>LENI</td>
+                <td><i>Chordeiles acutipennis</i></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Lesser Goldfinch</td>
+                <td>LEGO</td>
+                <td><i>Carduelis psaltria</i></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Lincoln's Sparrow</td>
+                <td>LISP</td>
+                <td><i>Melospiza lincolnii</i></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Loggerhead Shrike</td>
+                <td>LOSH</td>
+                <td><i>Lanius ludovicianus</i></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Long-Billed Curlew</td>
+                <td>LBCU</td>
+                <td><i>Numenius americanus</i></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Long-Billed Dowitcher</td>
+                <td>LBDO</td>
+                <td><i>Limnodromus scolopaceus</i></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Lucy's Warbler</td>
+                <td>LUWA</td>
+                <td><i>Vermivora luciae</i></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Macgillivray's Warbler</td>
+                <td>MGWA</td>
+                <td><i>Oporornis tolmiei</i></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Mc Cown's Longspur</td>
+                <td>MCLO</td>
+                <td><i>Calcarius mccownii</i></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Merlin</td>
+                <td>MERL</td>
+                <td><i>Falco columbarius</i></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Mountain Bluebird</td>
+                <td>MOBL</td>
+                <td><i>Sialia currucoides</i></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Mourning Dove</td>
+                <td>MODO</td>
+                <td><i>Zenaida macroura</i></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Myrtle Warbler</td>
+                <td>MYWA</td>
+                <td><i>Dendroica coronata</i></td>
+                <td>*4</td>
+              </tr>
+              <tr>
+                <td>Northern Flicker</td>
+                <td>NOFL</td>
+                <td><i>Colaptes auratus</i></td>
+                <td>*3</td>
+              </tr>
+              <tr>
+                <td>Northern Harrier</td>
+                <td>NOHA</td>
+                <td><i>Circus cyaneus</i></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Northern Mockingbird</td>
+                <td>NOMO</td>
+                <td><i>Mimus polyglottos</i></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Northern Oriole (Bullock's race)</td>
+                <td>BUOR</td>
+                <td><i>Icterus galbula (I. bullocki)</i></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Northern Pintail</td>
+                <td>NOPI</td>
+                <td><i>Anas acuta</i></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Northern Rough-Winged Swallow</td>
+                <td>NRWS</td>
+                <td><i>Stelgidopteryx serripennis</i></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Olive-Sided Flycatcher</td>
+                <td>OSFL</td>
+                <td><i>Contopus borealis</i></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Orange-Crowned Warbler</td>
+                <td>OCWA</td>
+                <td><i>Vermivora celata</i></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Oregon Junco</td>
+                <td>ORJU</td>
+                <td><i>Junco hyialis</i></td>
+                <td>*2</td>
+              </tr>
+              <tr>
+                <td>Phainopepla</td>
+                <td>PHAI</td>
+                <td><i>Phainopepla nitens</i></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Prairie Falcon</td>
+                <td>PRFA</td>
+                <td><i>Falco mexicanus</i></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Pyrrhuloxia</td>
+                <td>PYRR</td>
+                <td><i>Cardinalis sinuatus</i></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Red-Shafted Flicker</td>
+                <td>RSFL</td>
+                <td><i>Colaptes auratus</i></td>
+                <td>*3</td>
+              </tr>
+              <tr>
+                <td>Red-Tailed Hawk</td>
+                <td>RTHA</td>
+                <td><i>Buteo jamaicensis</i></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Red-Winged Blackbird</td>
+                <td>RWBL</td>
+                <td><i>Agelaius phoeniceus</i></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Ring-Billed Gull</td>
+                <td>RBGU</td>
+                <td><i>Larus delawarensis</i></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Rock Wren</td>
+                <td>ROWR</td>
+                <td><i>Salpinctes obsoletus</i></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Ruby-Crowned Kinglet</td>
+                <td>RCKI</td>
+                <td><i>Regulus calendula</i></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Rufous-Crowned Sparrow</td>
+                <td>RCSP</td>
+                <td><i>Aimophila ruficeps</i></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Rufous Hummingbird</td>
+                <td>RUHU</td>
+                <td><i>Selasphorus rufus</i></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Spotted Towhee</td>
+                <td>RSTO</td>
+                <td><i>Pipilo maculatus</i></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Sage Sparrow</td>
+                <td>SAGS</td>
+                <td><i>Amphispiza belli</i></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Sage Thrasher</td>
+                <td>SATH</td>
+                <td><i>Oreoscoptes montanus</i></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Sandhill Crane</td>
+                <td>SACR</td>
+                <td><i>Grus canadensis</i></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Savannah Sparrow</td>
+                <td>SAVS</td>
+                <td><i>Passerculus sandwichensis</i></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Say's Phoebe</td>
+                <td>SAPH</td>
+                <td><i>Sayornis saya</i></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Scaled Quail</td>
+                <td>SCQU</td>
+                <td><i>Callipepla squamata</i></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Scott's Oriole</td>
+                <td>SCOR</td>
+                <td><i>Icterus parisorum</i></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Western Scrub Jay</td>
+                <td>SCJA</td>
+                <td><i>Aphelocoma californica</i></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Sharp-Shinned Hawk</td>
+                <td>SSHA</td>
+                <td><i>Accipiter striatus</i></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Solitary Sandpiper</td>
+                <td>SOSA</td>
+                <td><i>Tringa solitaria</i></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Song Sparrow</td>
+                <td>SOSP</td>
+                <td><i>Melospiza melodia</i></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Spotted Sandpiper</td>
+                <td>SPSA</td>
+                <td><i>Actitis macularia</i></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Sprague's Pipit</td>
+                <td>SPPI</td>
+                <td><i>Anthus spragueii</i></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Swainson's Hawk</td>
+                <td>SWHA</td>
+                <td><i>Buteo swainsoni</i></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Townsend's Warbler</td>
+                <td>TOWA</td>
+                <td><i>Dendroica townsendi</i></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Tree Swallow</td>
+                <td>TRES</td>
+                <td><i>Tachycineta bicolor</i></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Turkey Vulture</td>
+                <td>TUVU</td>
+                <td><i>Cathartes aura</i></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Verdin</td>
+                <td>VERD</td>
+                <td><i>Auriparus flaviceps</i></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Vesper Sparrow</td>
+                <td>VESP</td>
+                <td><i>Pooecetes gramineus</i></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Violet-Green Swallow</td>
+                <td>VGSW</td>
+                <td><i>Tachycineta thalassina</i></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Virginia's Warbler</td>
+                <td>VIWA</td>
+                <td><i>Vermivora virginiae</i></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Western Bluebird</td>
+                <td>WEBL</td>
+                <td><i>Sialia mexicana</i></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Western Kingbird</td>
+                <td>WEKI</td>
+                <td><i>Tyrannus verticalis</i></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Western Meadowlark</td>
+                <td>WiE</td>
+                <td><i>Sturnella neglecta</i></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Western Sandpiper</td>
+                <td>WESA</td>
+                <td><i>Calidris mauri</i></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Western Tanager</td>
+                <td>WETA</td>
+                <td><i>Piranga ludoviciana</i></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Western Wood-Pewee</td>
+                <td>WEWP</td>
+                <td><i>Contopus sordidulus</i></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>White-Crowned Sparrow</td>
+                <td>WCSP</td>
+                <td><i>Zonotrichia leucophrys</i></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>White-Throated Swift</td>
+                <td>WTSW</td>
+                <td><i>Aeronautes saxatalis</i></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>White-Winged Dove</td>
+                <td>WWDO</td>
+                <td><i>Zenaida asiatica</i></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Wilson's Phalarope</td>
+                <td>WIPH</td>
+                <td><i>Phalaropus tricolor</i></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Wilson's Warbler</td>
+                <td>WIWA</td>
+                <td><i>Wilsonia pusilla</i></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Yellow-Headed Blackbird</td>
+                <td>YHBL</td>
+                <td><i>Xanthocephalus xanthocephalus</i></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Yellow Warbler</td>
+                <td>YWAR</td>
+                <td><i>Dendroica petechia</i></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Yellow-Rumped Warbler</td>
+                <td>YRWA</td>
+                <td><i>Dendroica coronata</i></td>
+                <td>*4</td>
+              </tr>
+              <tr>
+                <td>Yellow-Shafted Flicker</td>
+                <td>YSFL</td>
+                <td><i>Colaptes auratus</i></td>
+                <td>*3</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p>Species on the Jornada have been "lumped" in some cases because of interbreeding, but subspecies remain identifiable. Codes exist for both species and subspecies as follows:</p>
+        <p>*2 Species: Dark-eyed Junco DEJU<br />
+          Subspecies: Oregon Junco ORJU<br />
+          Grey Headed Junco GHJU<br />
+          Slated-colored Junco SCJU (eastern, rare)<br />
+          <br />
+          *3 Species: Northern Flicker NOFL<br />
+          Subspecies: Red-shafted Flicker RSFL<br />
+          Yellow-shafted Flicker YSFL (eastern, rare)<br />
+          <br />
+          *4 Species Yellow-rumped warbler YRWA<br />
+          Subspecies: Audubon's Warbler AUWA<br />
+          Myrtle Warbler MYWA (eastern, rare)<br />
+          <br />
+          Other species have been split creating a new name for 2 species:<br />
+          <br />
+          *1 old species: Brown Towhee BRTO<br />
+          New species: Canyon Towhee CATO<br />
+          California Towhee (found only in California)<br />
+           </p>
+        <p>12/1998 Clarification provided for Bullock's or Northern oriole.</p>
+        <h3>
+          Authority for Jornada Bird Nomenclature</h3>
+        <p>"Check-list of North American Birds: the species of birds of North America from the Arctic through Panama, including the West Indies and Hawaiian Islands." Prepared by the Committee on Classification and Nomenclature of the American Ornithologists' Union. 6th edition, 1982.</p>
+        <p><b>PLUS</b></p>
+        <p>Bi-Annual updates published as supplients to <i>The Auk</i>; i.e., "Fortieth Supplient to the American Ornithologists' Union <i>Check-list of North American Birds</i>." Supplients 36-40.</p>
+
+      </div>
+    </section>
+    <footer>
+      <%- include('components/footer', {}); %>  
+    </footer>
+  </body>
+  <script src="/assets/js/jer-core.js" type="text/javascript"></script>
+</html> 
