@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="/files/logos/jer-micro-logo-32.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/files/logos/jer-micro-logo-192.png">
+    <link rel="stylesheet" type="text/css" href="/css/jer-bibliography.css">
+    <link rel="stylesheet" type="text/css" href="/css/jer-core.css">
+    <title>Publications</title>
+  </head>
+  <body>
+    <header id="page-header">
+      <%- include('components/header', {}); %>
+    </header>
+    <section class="simple-section">
+      <div id="publications" class="content-section">
+        <div class="centered">
+          <h2>Jornada Publications</h2>
+          <p>Click on a publication title to view additional details about the publication, including the option to download a full text copy when available. Click on an author name or keyword tag to filter results.</p>
+        </div>
+        <div id="bibliography" class="centered"></div>
+      </div>
+    </section>
+    <section id="secondary-topics">
+      <div class="content-section">
+        <ul class="secondary-topic-list">
+          <li class="secondary-topic">
+            <div class="secondary-topic-wrapper">
+              <div class="secondary-topic-icon" style="background-image:url('/files/icons/article_symbol_white.svg')"></div>
+              <h5 class="secondary-topic-heading">Featured Publication</h5>
+              <div class="secondary-topic-description">Some citation.</div>
+              <a class="secondary-topic-button jer-button" href="#">View</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <footer>
+      <%- include('components/footer', {}); %>
+    </footer>
+  </body>
+  <script src="/js/jer-bibliography.js" type="text/javascript"></script>
+  <script src="/js/jer-core.js" type="text/javascript"></script>
+</html> 
