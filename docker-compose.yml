@@ -1,9 +1,12 @@
 version: '3'
 services:
   node:
-    image: landscapedatacommons/jornada-ejs:1.0.0 
+    build:
+      context: .
+      dockerfile: ./images/node.Dockerfile
+    image: landscapedatacommons/jornada-ejs:latest
     ports:
-      - 5001:5000
+      - 5001:3000
     deploy:
       replicas: 2
       update_config:
