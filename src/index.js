@@ -160,7 +160,7 @@ app.get('/tools/stipa', (req, res) => {
 
 app.get('/people/:person', (req, res) => {
     if (req.params.person) {
-        let page = 'views/people/' + req.params.person + '.ejs';
+        let page = '/views/people/' + req.params.person + '.ejs';
 
         fs.stat(page, function(err, stat) {
             if (err == null) {
