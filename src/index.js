@@ -160,17 +160,8 @@ app.get('/tools/stipa', (req, res) => {
 
 app.get('/people/:person', (req, res) => {
     if (req.params.person) {
-        let page = 'views/people/' + req.params.person + '.ejs';
-
-        fs.stat(page, function(err, stat) {
-            if (err == null) {
-                page = 'people/' + req.params.person;
-                res.render(page);
-            }
-            else {
-                res.sendStatus(404);
-            }
-        });
+        let page = "people/" + req.params.person
+        res.render(page)
     }
     else {
         res.sendStatus(404);
