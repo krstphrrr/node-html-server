@@ -1,0 +1,22 @@
+version: '3'
+services:
+  node:
+    build:
+      context: .
+      dockerfile: ./images/node.Dockerfile
+    image: landscapedatacommons/jornada-ejs:latest
+    ports:
+      - 5001:3000
+    deploy:
+      replicas: 2
+      update_config:
+        parallelism: 1
+
+        failure_action: rollback
+        delay: 20s
+      
+      # restart_policy:
+        # condition: any
+        # delay: 5s
+        # max_attempts: 3
+        # window: 120s
